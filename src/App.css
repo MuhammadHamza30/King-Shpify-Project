@@ -1,0 +1,1484 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+
+#root {
+  max-width: 1280px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+}
+
+.topIcon i {
+  padding: 0 15px;
+  border-right: 1px solid rgba(var(--header_border_color), .15);
+}
+
+.TopBar p {
+  padding: 0;
+  margin: 0;
+}
+
+.social-icon {
+  position: relative;
+  cursor: pointer;
+  width: 5px;
+}
+
+.social-icon-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover .social-icon-item {
+  transform: scale(0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.Store_Module {
+  display: flex;
+}
+
+body {
+  overflow-x: hidden;
+  padding: 0;
+  /* Remove extra padding */
+}
+
+.Section2 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.267);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  /* Fixed at the top */
+  left: 0;
+  z-index: 2;
+}
+
+.navbar .topIcon i {
+  color: white;
+  border-left: 1px solid rgba(255, 255, 255, 0.267);
+}
+
+.Section2 .navbar:hover {
+  color: black;
+  background: white;
+}
+
+.Section2 .navbar:hover .topIcon i,
+.Section2 .navbar:hover a {
+  color: black;
+}
+
+.logo {
+  width: 100px;
+  background-image: url('./assets/Images/logo-w.svg');
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.Section2 .navbar:hover .logo {
+  background-image: url('./assets/Images/logo-b.svg');
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  /* Center-align navbar links */
+  flex-wrap: nowrap;
+}
+
+.navbar-nav a {
+  color: white;
+  font-weight: 600;
+  margin: 0 1rem;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+
+.image-heading {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.owl-dots {
+  display: none;
+}
+
+.Section3 {
+  height: 9rem;
+  background: rgb(153, 255, 0);
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.custom-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-logo {
+  height: 50px;
+  /* Adjust the logo size */
+}
+
+@media (max-width: 1000px) {
+  .Section2 .navbar {
+    color: black;
+    background-color: white;
+  }
+
+  .Section2 .navbar .topIcon i,
+  .Section2 .navbar a {
+    color: black;
+  }
+
+  .Section2 .navbar .logo {
+    width: 100px;
+    /* Specify the width */
+    background-image: url('./assets/Images/logo-b.svg');
+    background-size: cover;
+    /* Cover the entire area of the element */
+  }
+}
+
+.topIcon i {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Dropdown Styling */
+.custom-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.custom-dropdown .dropdown-menu {
+  border-radius: 0;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  display: none;
+  background-color: white;
+  color: black;
+  border: none;
+  padding-top: 1rem;
+  /* Align dropdown with the shop link */
+}
+
+.custom-dropdown .dropdown-item {
+  color: black;
+  padding: 10px 20px;
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Slight hover effect */
+}
+
+.custom-dropdown .dropdown-toggle::after {
+  display: none;
+  /* Hide the default dropdown caret */
+}
+
+.custom-dropdown .dropdown-menu .dropdown-item i {
+  margin-left: auto;
+  /* Align arrow icons to the right */
+  color: black;
+}
+
+.custom-dropdown:hover i {
+  color: black;
+  /* Keep arrow color consistent on hover */
+}
+
+/* Sub-List Styling */
+
+.sub-dropdown-menu {
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  padding-top: 1rem;
+  left: 93%;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.sub-dropdown-menu ul {
+  padding: 0;
+}
+
+.sub-dropdown-container:hover .sub-dropdown-menu {
+  width: 220px;
+  right: 0;
+}
+
+.sub-dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.custom-dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+.sub-dropdown-item {
+  padding: 5px 0;
+}
+
+.sub-dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.image-container .image-heading p {
+  padding-bottom: 1rem;
+  font-size: 60px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+}
+
+/* Anchor tag styles */
+.image-container a {
+  width: 200px;
+  color: black;
+  background: white;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin: 2rem;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.5s ease;
+}
+
+.image-container a i {
+  position: relative;
+  left: 0;
+  transition: left 0.5s ease;
+}
+
+.image-container a:hover {
+  background: yellowgreen;
+}
+
+.image-container .ViewMore:hover {
+  background: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.image-container a:hover i {
+  left: 153px;
+}
+
+.image-container a span {
+  opacity: 1;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  transition: left 0.5s ease, opacity 0.3s ease;
+}
+
+.herofooter {
+  position: relative;
+}
+
+.herofooter .Image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  position: absolute;
+  border: 2px solid black;
+
+}
+
+.herofooter .iamge1 {
+  left: 0;
+  /* Position the first image */
+}
+
+.herofooter .iamge2 {
+  left: 70px;
+  /* Overlap the second image */
+  z-index: 1;
+  /* Ensure it's on top of the first image */
+}
+
+.herofooter .iamge3 {
+  left: 130px;
+  /* Overlap the third image */
+  z-index: 2;
+  /* Ensure it's on top of the second image */
+}
+
+.herofooter .Image img:hover {
+  transform: translateY(-10px);
+  /* Move up on hover */
+}
+
+@media (max-width: 768px) {
+  .herofooter .Image img {
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+.herofooter .text {
+  transform: translateX(12rem);
+}
+
+.herofooter .text a {
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.herofooter .text a i {
+  position: relative;
+  right: 0;
+  transition: right 0.5s ease;
+}
+
+.herofooter .text a:hover i {
+  right: -10px;
+}
+
+
+
+.thumnail {
+  width: 200px;
+  height: 120px;
+  border-radius: 1.5rem;
+}
+
+.image-container-thum {
+  position: relative;
+  display: inline-block;
+  /* So the icon stays relative to the image */
+}
+
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Center the icon on the image */
+  font-size: 40px;
+  /* Size of the play icon */
+  color: white;
+  /* Icon color */
+  transition: transform 0.3s ease;
+  /* Smooth scaling transition */
+}
+
+.image-container-thum:hover .play-icon {
+  transform: translate(-50%, -50%) scale(1.3);
+  /* Scale up the icon on hover */
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+}
+
+
+.Section_4 {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+
+.Section4 {
+  padding: 3rem;
+  background: black;
+  align-items: center;
+}
+
+.Section4 .Catigouress {
+  align-items: center;
+  text-align: center;
+}
+
+.Section4 .Catigouress h1 {
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.Section4 .Catigouress div {
+  margin: 1rem;
+  display: inline-block;
+}
+
+.Section4 .Catigouress div a:hover {
+  color: white;
+}
+
+.Section4 .Catigouress div a {
+  background: white;
+  width: 150px;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  border-radius: 2rem;
+  padding: 0.8rem;
+  transition: 0.6s ease-in;
+  overflow: hidden;
+  position: relative;
+}
+
+.Section4 .Catigouress img {
+  width: 150px;
+  height: 70px;
+  margin: 1rem;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.Section4 .Catigouress div a:hover {
+  background: rgb(142, 230, 10);
+  transition: 0.6s;
+}
+
+.Section5 {
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.weekend-deals {
+  font-size: 4rem;
+  /* Adjust as needed */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.transparent-text {
+  color: transparent;
+  /* Makes the text color transparent */
+  -webkit-text-stroke: 2px black;
+  /* Adds black border around the letters */
+}
+
+
+
+.Section5 .card,
+.Section7 .card {
+  width: 16rem;
+  position: relative;
+  overflow: hidden;
+  /* Ensure content doesn't overflow */
+}
+
+.Section5 .card .Cart a,
+.Section7 .card .Cart a {
+  color: black;
+  height: 50px;
+  width: 50px;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.Section5 .card .Cart,
+.Section7 .card .Cart {
+  position: absolute;
+  left: 100%;
+  right: 0;
+  bottom: 5%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.Section5 .card:hover .Cart,
+.Section7 .card:hover .Cart {
+  left: 220px;
+  /* Position it inside the card on hover */
+}
+
+.Section5 .card:hover,
+.Section7 .card:hover {
+  transform: scale(1.04);
+  transition: 0.5s ease;
+}
+
+.Section5 .card:hover img,
+.Section7 .card:hover img {
+  transform: scale(1.04);
+  transition: 0.5s ease;
+}
+
+.info {
+  position: absolute;
+  bottom: -50%;
+  /* Hidden below the card initially */
+  margin-left: 10%;
+  left: 0;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Slight transparency */
+  padding: 10px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+  transition: bottom 0.5s ease;
+  z-index: 1;
+  /* Ensure it appears over the image */
+}
+
+.Section5 .card:hover .info,
+.Section7 .card:hover .info {
+  bottom: 80px;
+  /* Slide up when hovering */
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.size-options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.size-option {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  border-radius: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.size-option.active {
+  background-color: black;
+  color: white;
+}
+
+.color-options {
+  display: flex;
+  gap: 10px;
+}
+
+.color-option {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s, border 0.3s;
+  border: 2px solid transparent;
+}
+
+.color-option:hover {
+  transform: scale(0.9);
+  border: 2px solid black;
+}
+
+.red {
+  background-color: rgba(255, 0, 0, 0.705);
+}
+
+.blue {
+  background-color: rgba(0, 0, 255, 0.566);
+}
+
+.green {
+  background-color: rgba(0, 128, 0, 0.55);
+}
+
+.yellow {
+  background-color: rgba(255, 255, 0, 0.521);
+}
+
+.purple {
+  background-color: rgba(128, 0, 128, 0.432);
+}
+
+.Section6 {
+  background: rgb(202, 202, 202);
+  padding-bottom: 3rem;
+}
+
+
+
+.Section6 .card {
+  background-color: #f0f0f0;
+  /* Gray background */
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 3rem;
+  width: 250px;
+}
+
+.Section6 .card-body {
+  position: relative;
+  z-index: 2;
+}
+
+.Section6 .card-body svg {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid black;
+  /* Circular border around the icons */
+  border-radius: 50%;
+  /* Making it circular */
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  transition: color 0.3s ease-in-out;
+}
+
+.Section6 .card:hover {
+  transform: translateY(-5px);
+  /* Lift the card on hover */
+}
+
+.Section6 .card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top-left-radius: 5rem;
+  background-color: black;
+  transition: width 0.6s ease-in-out, height 0.8s ease-in-out;
+  z-index: 1;
+}
+
+.Section6 .card:hover::before {
+  width: 100%;
+  height: 150%;
+}
+
+.Section6 .card:hover .card-title,
+.Section6 .card:hover .card-text,
+.Section6 .card:hover svg {
+  color: white;
+  border-color: white;
+}
+
+.Section6 .card-title,
+.Section6 .card-text {
+  transition: color 0.5s ease-in-out;
+}
+
+
+.Fotter {
+  background: rgb(21, 21, 21);
+  color: #aaaaaa;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+}
+
+.Fotter h5 {
+  color: white;
+}
+
+.Fotter a {
+  text-decoration: none;
+  color: #aaaaaa;
+  position: relative;
+}
+
+.Fotter .TabSection a::after,
+.Fotter .bottom_Bar a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  /* Adjust the height of the underline */
+  background-color: #ffffff;
+  /* Color of the underline */
+  margin-top: 2px;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+  /* Control the speed of the animation */
+}
+
+.Fotter .TabSection p {
+  font-size: 23px;
+  font-weight: bold;
+  color: white;
+}
+
+.Fotter a:hover::after {
+  width: 100%;
+}
+
+
+.Fotter a:hover {
+  color: white;
+}
+
+.Fotter .social-icons {
+  margin-top: 2rem;
+}
+
+.Fotter .social-icons a {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #aaaaaa;
+  border-radius: 50%;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+
+
+.Fotter ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Fotter .bottom_Bar {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #aaaaaa;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+.Fotter .bottom_Bar ul li {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
+.Section7 {
+  background: black;
+  height: 45rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  /* Ensures overflowing content is hidden */
+}
+
+.Section7 .Exploring {
+  position: absolute;
+  left: 0;
+  background-image: url('../src/assets/Images/red-clothes.jpg');
+  height: 45rem;
+  width: 50rem;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.Section7 .Cards {
+  position: absolute;
+  display: flex;
+  padding-top: 7rem;
+  right: -100px;
+  overflow: hidden;
+  /* Hides overflowing content */
+  gap: 1rem;
+  /* Adds spacing between cards */
+  transition: 0.4s ease;
+}
+
+.Section7 .Cards:hover {
+  right: -50px;
+}
+
+.Section7 .Cards .card {
+  flex-shrink: 0;
+  /* Prevents shrinking of cards */
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Section7 .Cards .card1 {
+  width: 20rem;
+  /* Larger width for the first card */
+  height: 32rem;
+  /* Larger height for the first card */
+}
+
+.Section7 .Cards .card img {
+  object-fit: cover;
+  /* Ensures images fit nicely */
+  width: 100%;
+  height: 100%;
+}
+
+.Exploring {
+  width: 100%;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black background for a stylish look */
+}
+
+.Exploring .text {
+  position: absolute;
+  padding: 3rem;
+  bottom: 0;
+}
+
+.Exploring .text h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  /* Adds a shadow for a stylish text effect */
+}
+
+.Exploring .text p {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  /* Subtle shadow for depth */
+}
+
+.Exploring .text button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.7s ease;
+}
+
+.Exploring .text button img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.Exploring .text button span {
+  margin-left: 1rem;
+  margin-right: auto;
+  font-size: 1rem;
+}
+
+.Exploring .text button .plus-sign {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.Exploring .text button:hover {
+  background-color: rgb(6, 252, 6);
+}
+
+.Exploring .text button:hover img,
+.Exploring .text button:hover span,
+.Exploring .text button:hover .plus-sign {
+  transform: scale(1.2);
+}
+
+
+/* Common styles for both images and videos */
+.Section8 .card img,
+.Section8 .card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensures the content covers the card */
+}
+
+.Section8 .card .btn {
+  background: white;
+  border-radius: 50%;
+}
+
+/* Card styles with smooth hover effects */
+.Section8 .card {
+  border-radius: 2.5rem;
+  transition: transform 0.5s ease-in, border-color 0.5s ease-in-out;
+  overflow: hidden;
+  width: 200px;
+  /* Adjust as needed */
+  height: 300px;
+  /* Adjust as needed */
+  background-size: cover;
+}
+
+/* Hover effect for scaling and border color transition */
+.Section8 .card:hover {
+  transform: scale(1.1);
+  border: 4px solid red;
+  animation: borderPulse 1.5s infinite;
+}
+
+/* Smooth pulsing effect for border color */
+@keyframes borderPulse {
+  0% {
+    border-color: red;
+  }
+
+  50% {
+    border-color: blue;
+  }
+
+  100% {
+    border-color: red;
+  }
+}
+
+/* For positioning video buttons on top right */
+.Section8 .position-relative {
+  position: relative;
+}
+
+.Section8 p {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.Shop_Section1 {
+  background: black;
+  color: white;
+}
+
+.Shop_Section2 {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Shop_Section2 .navbar {
+  background: white;
+  color: black;
+}
+
+.Shop_Section2 .navbar .logo {
+  background-image: url('./assets/Images/logo-b.svg');
+  transition: background-image 0.5s ease-in-out;
+}
+
+
+.Shop_Section2 .navbar .topIcon i,
+.Shop_Section2 .navbar a {
+  color: black;
+}
+
+
+.Shop_Section3 {
+  padding-top: 8rem;
+}
+
+.Shop_Section3 h1 {
+  font-size: 100px;
+  font-weight: 700;
+
+}
+
+.Shop_Section3 p {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+
+.SopButton {
+  padding: 0.5rem;
+  border: 2px solid black;
+  margin-right: 1rem;
+  border-radius: 2rem;
+  transition: 0.6s ease;
+}
+
+.SopButton:hover {
+  transform: scale(1.1);
+}
+
+.SopButton a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+.SopButton img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+
+.section-wrapper {
+  padding: 20px;
+}
+
+.section-spacing {
+  margin: 20px auto;
+  width: 90%;
+}
+
+.marquee-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background: rgb(153, 255, 0);
+}
+
+.marquee-block-node {
+  display: flex;
+  animation: marquee-scroll 10s linear infinite;
+}
+
+.autoplay-infinite {
+  animation-iteration-count: infinite;
+}
+
+.rtl-direction {
+  direction: rtl;
+
+}
+
+.marquee-block {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.marquee-block-item {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.text-item .marquee-text {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+}
+
+.icon-item svg rect {
+  fill: black;
+  width: 13px;
+  height: 13px;
+}
+
+/* Marquee animation */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-block-node {
+  display: flex;
+  animation: marquee-scroll 50s linear infinite;
+  /* Slower speed */
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  animation: marquee-scroll 20s linear infinite;
+}
+
+.marquee-icon {
+  margin: 0 10px;
+}
+
+.marquee-text {
+  margin: 0 10px;
+}
+
+.Arival_Card .row1 {
+  margin: 1rem 0 1rem 0;
+}
+
+.Arival_Card .card {
+  border-radius: 3rem;
+  margin: 1rem;
+}
+
+.Arival_Card .card img {
+  background-size: cover;
+}
+
+/* Card styling */
+.Arival_Card .card {
+  position: relative;
+  border-radius: 3rem;
+  gap: 20px;
+  overflow: hidden;
+  /* Ensures content doesn’t spill outside the card */
+  cursor: pointer;
+  /* Adds a pointer cursor on hover */
+  transition: transform 0.3s ease;
+  /* Smooth scaling effect */
+  width: 100%;
+  /* Adjust width as per your design */
+  height: 300px;
+  /* Set the desired card height */
+}
+
+/* Card image styling */
+.Arival_Card .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensures the image fully covers the card */
+  border-radius: 3rem;
+}
+
+/* Heading styling */
+.Arival_Card .card h1 {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  /* Positions heading on the right */
+  color: white;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+  /* Smooth transition */
+}
+
+/* Icon styling */
+.Arival_Card .card .arrow-icon {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  /* Positions icon on the left */
+  font-size: 1.5rem;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.Arival_Card .card:hover h1 {
+  transform: translateY(-10px);
+  /* Move heading slightly up */
+}
+
+.Arival_Card .card:hover .arrow-icon {
+  transform: translateY(-10px);
+  /* Move icon slightly up */
+  color: #fff;
+  content: "\f35d";
+  /* FontAwesome Unicode for 'bi-arrow-up-right-circle' */
+}
+
+.About_HeroSection {
+  background-image: url('../src/assets/Images/card_image1.jpg');
+  background-size: cover;
+  height: 90vh;
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: space-around;
+  opacity: 0.9;
+}
+
+.About_HeroSection h1 {
+  padding-top: 10rem;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.About_HeroSection p {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.About_Para {
+  text-align: center;
+  background: rgb(223, 222, 222);
+  padding: 10rem;
+}
+
+.About_Para h1 {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.about_liCardsInfo img {
+  width: 600px;
+  height: 500px;
+  padding: 1rem;
+  border-radius: 4rem;
+  vertical-align: middle;
+}
+
+.about_liCardsInfo .text {
+  padding: 1rem;
+
+}
+
+.about_liCardsInfo .text h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.about_liCardsInfo .text p {
+  font-size: 20px;
+  font-weight: 450;
+}
+
+.abot_video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* Adjusts video width to cover the section */
+  height: auto;
+  /* Allows flexibility for height */
+}
+
+.videoBackgroundFile {
+  width: 100%;
+  height: 100vh;
+  /* Full viewport height */
+  object-fit: cover;
+  opacity: 0.9;
+  /* Adjust the opacity as needed */
+  z-index: -1;
+  /* Keeps it in the background */
+}
+
+/* Pop-up container */
+
+.popup {
+  position: fixed;
+  margin: 1rem 1rem 1rem 0;
+  right: -100%;
+  width: 500px;
+  height: 500px;
+  background: rgb(252, 248, 240);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease-in;
+  z-index: 10000;
+  border-radius: 3rem;
+}
+
+.popup.show {
+  right: 0;
+}
+
+.popup-content {
+  padding: 20px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin-top: 40px;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 3rem;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+ outline: none;
+}
+
+.popup-content .search {
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.popup-content .search:hover {
+  color: white;
+  background: black;
+  border-radius: 50%;
+}
+
+.popup-content .search .bi-search{
+  font-size: 1.9rem;
+}
+
+
+.popup-content ul{
+  padding: 0;
+}
+
+.popup-content ul li{
+  list-style: none;
+  padding-top: 0.5rem;
+}
+
+
+
+section {
+  padding: 10rem 0 5rem 0;
+  background-color: rgba(248, 240, 226, 0.55);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.LoginContent {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3rem;
+  font-size: 1rem;
+}
+
+.LoginContent form a {
+  display: inline-block;
+  color: black;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+form button {
+  width: 100%;
+  padding: 15px;
+  background-color: black;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: rgb(189, 252, 95);
+  color: black;
+}
+
+form p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+form p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+form p a:hover {
+  text-decoration: underline;
+}
+
+.col-lg-6 p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.LginText P{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.LginText{
+  align-content: center;
+}
