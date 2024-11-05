@@ -23,7 +23,6 @@ import Fotter from '../Component/Footer';
 import lastCard1 from '../assets/Images/LastCard-1.jpg'
 import lastCard2 from '../assets/Images/LastCard-2.jpg'
 import lastCard3 from '../assets/Images/LastCard-3.jpg'
-
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import 'owl.carousel/dist/owl.carousel.min.js';
