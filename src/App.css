@@ -1973,3 +1973,10 @@ form p a:hover {
   }
 
 }
+
+@media (min-width:720px){
+  .Section5 .ShoppingCards ,.Section8{
+    display: flex;
+    justify-content: space-around;
+  }
+}

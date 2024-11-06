@@ -230,7 +230,7 @@ function Home() {
             </div>
           </div>
           <div className="row">
-            <div className=''>
+            <div className='ShoppingCards'>
               <div className="col-lg-2 col-md-6 col-sm-12">
                 <div class="card">
                   <img class="card-img-top" src={Card1} alt="Card image cap" />
@@ -512,7 +512,7 @@ function Home() {
             </div>
           </div>
           <div className="row">
-            <div className="Section8">
+            <div className="Section8 ">
               <div className='col-lg-2 col-sm-6'>
                 <div className="card">
                   <img
