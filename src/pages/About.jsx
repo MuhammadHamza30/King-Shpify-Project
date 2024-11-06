@@ -128,68 +128,78 @@ function About() {
               </h1>
               <p>
                 Connect with us on our platforms to join our community and engage with our brand. Whether it's new product launches,
-                special promotions, or exciting updates, our social media channels are the best way to stay in the loop.
-              </p>
+                special promotions, or exciting updates, our social media channels are the best way to stay in the loop.</p>
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-12 d-flex justify-content-around">
-              <div className="card">
-                <img
-                  src={lastCard1}
-                  className="card-img-top img-fluid scale-on-hover"
-                  alt="Card 1"
-                />
-              </div>
-              <div className="card">
-                <img
-                  src={lastCard2}
-                  className="card-img-top img-fluid"
-                  alt="Card 3"
-                />
-              </div>
-              <div className="card">
-                <video
-                  ref={videoRef1}
-                  src="//theking-castle.myshopify.com/cdn/shop/videos/c/vp/12489ef50d3e4fe797a0967abff98130/12489ef50d3e4fe797a0967abff98130.HD-1080p-7.2Mbps-32552816.mp4?v=0"
-                  className="card-img-top img-fluid"
-                  muted
-                  autoPlay
-                ></video>
-                <div
-                  className="position-absolute top-0 end-0 p-3"
-                  style={{ zIndex: 1 }}
-                >
-                  <button className="btn" onClick={toggleVideoPlayPause}>
-                    {isPlaying1 ? <i className="bi bi-pause-fill"></i> : <i className="bi bi-play-fill"></i>}
-                  </button>
+            <div className="Section8 ">
+              <div className='col-lg-2 col-sm-6'>
+                <div className="card">
+                  <img
+                    src={lastCard1}
+                    className="card-img-top img-fluid scale-on-hover"
+                    alt="Card 1"
+                  />
                 </div>
               </div>
-              <div className="card">
-                <img
-                  src={lastCard3}
-                  className="card-img-top img-fluid"
-                  alt="Card 3"
-                />
+              <div className='col-lg-2 col-sm-6'>
+                <div className="card">
+                  <img
+                    src={lastCard2}
+                    className="card-img-top img-fluid"
+                    alt="Card 3"
+                  />
+                </div>
               </div>
-              <div className="card">
-                <video
-                  ref={videoRef2}
-                  src="//theking-castle.myshopify.com/cdn/shop/videos/c/vp/fd12c57adaef4cec97fd0083925c6888/fd12c57adaef4cec97fd0083925c6888.HD-1080p-7.2Mbps-32617819.mp4?v=0"
-                  className="card-img-top img-fluid"
-                  muted
-                  autoPlay
-                ></video>
-                <div
-                  className="position-absolute top-0 end-0 p-3"
-                  style={{ zIndex: 1 }}
-                >
-                  <button className="btn" onClick={toggleVideo2PlayPause}>
-                    {isPlaying2 ? <i className="bi bi-pause-fill"></i> : <i className="bi bi-play-fill"></i>}
-                  </button>
+              <div className='col-lg-2 col-sm-6'>
+                <div className="card">
+                  <video
+                    ref={videoRef1}
+                    src="//theking-castle.myshopify.com/cdn/shop/videos/c/vp/12489ef50d3e4fe797a0967abff98130/12489ef50d3e4fe797a0967abff98130.HD-1080p-7.2Mbps-32552816.mp4?v=0"
+                    className="card-img-top img-fluid"
+                    muted
+                    autoPlay:true
+                  ></video>
+                  <div
+                    className="position-absolute top-0 end-0 p-3"
+                    style={{ zIndex: 1 }}
+                  >
+                    <button className="btn" onClick={toggleVideoPlayPause}>
+                      {isPlaying1 ? <i className="bi bi-pause-fill"></i> : <i className="bi bi-play-fill"></i>}
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-2 col-sm-6'>
+                <div className="card">
+                  <img
+                    src={lastCard3}
+                    className="card-img-top img-fluid"
+                    alt="Card 3"
+                  />
+                </div>
+              </div>
+              <div className='col-lg-2 col-sm-6'>
+                <div className="card">
+                  <video
+                    ref={videoRef2}
+                    src="//theking-castle.myshopify.com/cdn/shop/videos/c/vp/fd12c57adaef4cec97fd0083925c6888/fd12c57adaef4cec97fd0083925c6888.HD-1080p-7.2Mbps-32617819.mp4?v=0"
+                    className="card-img-top img-fluid"
+                    muted
+                    autoPlay:true
+                  ></video>
+                  <div
+                    className="position-absolute top-0 end-0 p-3"
+                    style={{ zIndex: 1 }}
+                  >
+                    <button className="btn" onClick={toggleVideo2PlayPause}>
+                      {isPlaying2 ? <i className="bi bi-pause-fill"></i> : <i className="bi bi-play-fill"></i>}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
