@@ -27,12 +27,6 @@ function NewArrivals() {
               <p>Explore our New Arrivals and discover the freshest additions to our collection. From cutting-edge designs and vibrant colors to sophisticated styles and classic essentials, our latest offerings are crafted to elevate your wardrobe. Whether you're looking for the perfect outfit for a special occasion or seeking everyday elegance, our new arrivals have something for everyone.</p>
             </div>
           </div>
-          <div className="row">
-            <div className="col-lg-12"></div>
-          </div>
-          <div className="row">
-            <div className="col-lg-12"></div>
-          </div>
         </div>
       </section>
       <section>
@@ -94,48 +88,61 @@ function NewArrivals() {
       </section>
       <section className="Section5 Arival_Card">
         <div className="container">
-          <div className="row row1">
-            <div className="col-lg-12  d-flex justify-content-around">
+          <div className="row row1 justify-content-around">
+            <div className="col-lg-2 col-sm-12">
                 <div className="card">
                   <img src={Cardimage1} alt="" />
                   <h1>Coats</h1>
                   <i className="bi bi-arrow-right-circle arrow-icon"></i>
                 </div>
+                </div>
+                <div className="col-lg-2 col-sm-12">
               <div className="card">
                 <img src={Cardimage2} alt="" />
                 <h1>Coats</h1>
                 <i className="bi bi-arrow-right-circle arrow-icon"></i>
                 </div>
+                </div>
+                <div className="col-lg-2 col-sm-12">
               <div className="card"><img src={Cardimage3} alt="" />
               <h1>Coats</h1>
               <i className="bi bi-arrow-right-circle arrow-icon"></i>
               </div>
+              </div>
+              <div className="col-lg-2 col-sm-12">
               <div className="card"><img src={Cardimage4} alt="" />
               <h1>Coats</h1>
               <i className="bi bi-arrow-right-circle arrow-icon"></i>
               </div>
+              </div>
             </div>
-          </div>
-          <div className="row row2">
-            <div className="col-lg-12 d-flex justify-content-around">
+          <div className="row row2 justify-content-around">
+          <div className="col-lg-2 col-sm-12">
               <div className="card"><img src={Cardimage5} alt="" />
               <h1>Coats</h1>
               <i className="bi bi-arrow-right-circle arrow-icon"></i>
               </div>
+            </div>
+            <div className="col-lg-2 col-sm-12">
               <div className="card"><img src={Cardimage6} alt="" />
               <h1>Coats</h1>
               <i className="bi bi-arrow-right-circle arrow-icon"></i>
               </div>
+              </div>
+              <div className="col-lg-2 col-sm-12">
               <div className="card"><img src={Cardimage7} alt="" />
               <h1>Coats</h1>
               <i className="bi bi-arrow-right-circle arrow-icon"></i>
               </div>
+              </div>
+              <div className="col-lg-2 col-sm-12">
               <div className="card"><img src={Cardimage8} alt="" />
               <h1>Coats</h1>
               <i className="bi bi-arrow-right-circle arrow-icon"></i>
               </div>
+              </div>
             </div>
-          </div>
+
         </div>
       </section>
       <section className='Fotter'>

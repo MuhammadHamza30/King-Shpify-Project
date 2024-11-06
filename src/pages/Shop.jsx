@@ -33,19 +33,12 @@ function Shop(){
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-lg-12"></div>
-          </div>
-          <div className="row">
-            <div className="col-lg-12"></div>
-          </div>
         </div>
       </section>
       <section className="Section5">
         <div className="container">
-        <div className="row">
-            <div className="col-lg-12 d-flex justify-content-around">
-              <div class="card">
+        <div className="row py-4 justify-content-around">
+              <div class="card my-2 col-lg-2 col-sm-12 ">
                 <img class="card-img-top" src={Card1} alt="Card image cap" />
                 <div class="card-body d-flex justify-content-between">
                   <div>
@@ -74,7 +67,7 @@ function Shop(){
                   </div>
                 </div>
               </div>
-              <div class="card">
+              <div class="card my-2 col-lg-2 col-sm-12 ">
                 <img class="card-img-top" src={Card2} alt="Card image cap" />
 
                 <div class="card-body d-flex justify-content-between">
@@ -105,7 +98,7 @@ function Shop(){
                   </div>
                 </div>
               </div>
-              <div class="card">
+              <div class="card my-2 col-lg-2 col-sm-12 ">
                 <img class="card-img-top" src={Card3} alt="Card image cap" />
                 <div class="card-body d-flex justify-content-between">
                   <div>
@@ -134,7 +127,249 @@ function Shop(){
                   </div>
                 </div>
               </div>
-              <div class="card" >
+              <div class="card my-2 col-lg-2 col-sm-12 " >
+                <img class="card-img-top" src={Card4} alt="Card image cap" />
+
+                <div class="card-body d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title">Women Brown Sando</h5>
+                    <p class="card-text">From Rs. 3400</p>
+                  </div>
+                  <div class="Cart">
+                    <a href="#"><i className="bi bi-handbag-fill my-5"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Size</h2>
+                  <div class="size-options">
+                    <div class="size-option" data-size="S">S</div>
+                    <div class="size-option" data-size="M">M</div>
+                    <div class="size-option" data-size="L">L</div>
+                  </div>
+
+                  <h2>Color</h2>
+                  <div class="color-options">
+                    <div class="color-option red"></div>
+                    <div class="color-option blue"></div>
+                    <div class="color-option green"></div>
+                    <div class="color-option yellow"></div>
+                    <div class="color-option purple"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row py-4 justify-content-around">
+              <div class="card my-2 col-lg-2 col-sm-12 ">
+                <img class="card-img-top" src={Card1} alt="Card image cap" />
+                <div class="card-body d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title">Round Neck Sando</h5>
+                    <p class="card-text">From Rs. 2600</p>
+                  </div>
+                  <div class="Cart">
+                    <a href="#" ><i className="bi bi-handbag-fill bi-lg"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Size</h2>
+                  <div class="size-options">
+                    <div class="size-option" data-size="S">S</div>
+                    <div class="size-option" data-size="M">M</div>
+                    <div class="size-option" data-size="L">L</div>
+                  </div>
+
+                  <h2>Color</h2>
+                  <div class="color-options">
+                    <div class="color-option red"></div>
+                    <div class="color-option blue"></div>
+                    <div class="color-option green"></div>
+                    <div class="color-option yellow"></div>
+                    <div class="color-option purple"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card my-2 col-lg-2 col-sm-12 ">
+                <img class="card-img-top" src={Card2} alt="Card image cap" />
+
+                <div class="card-body d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title">Black Zipper Hoddie</h5>
+                    <p class="card-text">From Rs. 4100</p>
+                  </div>
+
+                  <div class="Cart">
+                    <a href="#"><i className="bi bi-handbag-fill bi-4x my-5"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Size</h2>
+                  <div class="size-options">
+                    <div class="size-option" data-size="S">S</div>
+                    <div class="size-option" data-size="M">M</div>
+                    <div class="size-option" data-size="L">L</div>
+                  </div>
+
+                  <h2>Color</h2>
+                  <div class="color-options">
+                    <div class="color-option red"></div>
+                    <div class="color-option blue"></div>
+                    <div class="color-option green"></div>
+                    <div class="color-option yellow"></div>
+                    <div class="color-option purple"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card my-2 col-lg-2 col-sm-12 ">
+                <img class="card-img-top" src={Card3} alt="Card image cap" />
+                <div class="card-body d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title">Black Gym Suit</h5>
+                    <p class="card-text">From Rs. 3500</p>
+                  </div>
+                  <div class="Cart">
+                    <a href="#"><i className="bi bi-handbag-fill my-5"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Size</h2>
+                  <div class="size-options">
+                    <div class="size-option" data-size="S">S</div>
+                    <div class="size-option" data-size="M">M</div>
+                    <div class="size-option" data-size="L">L</div>
+                  </div>
+
+                  <h2>Color</h2>
+                  <div class="color-options">
+                    <div class="color-option red"></div>
+                    <div class="color-option blue"></div>
+                    <div class="color-option green"></div>
+                    <div class="color-option yellow"></div>
+                    <div class="color-option purple"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card my-2 col-lg-2 col-sm-12 " >
+                <img class="card-img-top" src={Card4} alt="Card image cap" />
+
+                <div class="card-body d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title">Women Brown Sando</h5>
+                    <p class="card-text">From Rs. 3400</p>
+                  </div>
+                  <div class="Cart">
+                    <a href="#"><i className="bi bi-handbag-fill my-5"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Size</h2>
+                  <div class="size-options">
+                    <div class="size-option" data-size="S">S</div>
+                    <div class="size-option" data-size="M">M</div>
+                    <div class="size-option" data-size="L">L</div>
+                  </div>
+
+                  <h2>Color</h2>
+                  <div class="color-options">
+                    <div class="color-option red"></div>
+                    <div class="color-option blue"></div>
+                    <div class="color-option green"></div>
+                    <div class="color-option yellow"></div>
+                    <div class="color-option purple"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row py-4 justify-content-around">
+              <div class="card my-2 col-lg-2 col-sm-12 ">
+                <img class="card-img-top" src={Card1} alt="Card image cap" />
+                <div class="card-body d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title">Round Neck Sando</h5>
+                    <p class="card-text">From Rs. 2600</p>
+                  </div>
+                  <div class="Cart">
+                    <a href="#" ><i className="bi bi-handbag-fill bi-lg"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Size</h2>
+                  <div class="size-options">
+                    <div class="size-option" data-size="S">S</div>
+                    <div class="size-option" data-size="M">M</div>
+                    <div class="size-option" data-size="L">L</div>
+                  </div>
+
+                  <h2>Color</h2>
+                  <div class="color-options">
+                    <div class="color-option red"></div>
+                    <div class="color-option blue"></div>
+                    <div class="color-option green"></div>
+                    <div class="color-option yellow"></div>
+                    <div class="color-option purple"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card my-2 col-lg-2 col-sm-12 ">
+                <img class="card-img-top" src={Card2} alt="Card image cap" />
+
+                <div class="card-body d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title">Black Zipper Hoddie</h5>
+                    <p class="card-text">From Rs. 4100</p>
+                  </div>
+
+                  <div class="Cart">
+                    <a href="#"><i className="bi bi-handbag-fill bi-4x my-5"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Size</h2>
+                  <div class="size-options">
+                    <div class="size-option" data-size="S">S</div>
+                    <div class="size-option" data-size="M">M</div>
+                    <div class="size-option" data-size="L">L</div>
+                  </div>
+
+                  <h2>Color</h2>
+                  <div class="color-options">
+                    <div class="color-option red"></div>
+                    <div class="color-option blue"></div>
+                    <div class="color-option green"></div>
+                    <div class="color-option yellow"></div>
+                    <div class="color-option purple"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card my-2 col-lg-2 col-sm-12 ">
+                <img class="card-img-top" src={Card3} alt="Card image cap" />
+                <div class="card-body d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title">Black Gym Suit</h5>
+                    <p class="card-text">From Rs. 3500</p>
+                  </div>
+                  <div class="Cart">
+                    <a href="#"><i className="bi bi-handbag-fill my-5"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <h2>Size</h2>
+                  <div class="size-options">
+                    <div class="size-option" data-size="S">S</div>
+                    <div class="size-option" data-size="M">M</div>
+                    <div class="size-option" data-size="L">L</div>
+                  </div>
+
+                  <h2>Color</h2>
+                  <div class="color-options">
+                    <div class="color-option red"></div>
+                    <div class="color-option blue"></div>
+                    <div class="color-option green"></div>
+                    <div class="color-option yellow"></div>
+                    <div class="color-option purple"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card my-2 col-lg-2 col-sm-12 " >
                 <img class="card-img-top" src={Card4} alt="Card image cap" />
 
                 <div class="card-body d-flex justify-content-between">
@@ -166,253 +401,6 @@ function Shop(){
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-lg-12 pt-4 d-flex justify-content-around">
-              <div class="card">
-                <img class="card-img-top" src={Card1} alt="Card image cap" />
-                <div class="card-body d-flex justify-content-between">
-                  <div>
-                    <h5 class="card-title">Round Neck Sando</h5>
-                    <p class="card-text">From Rs. 2600</p>
-                  </div>
-                  <div class="Cart">
-                    <a href="#" ><i className="bi bi-handbag-fill bi-lg"></i></a>
-                  </div>
-                </div>
-                <div class="info">
-                  <h2>Size</h2>
-                  <div class="size-options">
-                    <div class="size-option" data-size="S">S</div>
-                    <div class="size-option" data-size="M">M</div>
-                    <div class="size-option" data-size="L">L</div>
-                  </div>
-
-                  <h2>Color</h2>
-                  <div class="color-options">
-                    <div class="color-option red"></div>
-                    <div class="color-option blue"></div>
-                    <div class="color-option green"></div>
-                    <div class="color-option yellow"></div>
-                    <div class="color-option purple"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <img class="card-img-top" src={Card2} alt="Card image cap" />
-
-                <div class="card-body d-flex justify-content-between">
-                  <div>
-                    <h5 class="card-title">Black Zipper Hoddie</h5>
-                    <p class="card-text">From Rs. 4100</p>
-                  </div>
-
-                  <div class="Cart">
-                    <a href="#"><i className="bi bi-handbag-fill bi-4x my-5"></i></a>
-                  </div>
-                </div>
-                <div class="info">
-                  <h2>Size</h2>
-                  <div class="size-options">
-                    <div class="size-option" data-size="S">S</div>
-                    <div class="size-option" data-size="M">M</div>
-                    <div class="size-option" data-size="L">L</div>
-                  </div>
-
-                  <h2>Color</h2>
-                  <div class="color-options">
-                    <div class="color-option red"></div>
-                    <div class="color-option blue"></div>
-                    <div class="color-option green"></div>
-                    <div class="color-option yellow"></div>
-                    <div class="color-option purple"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <img class="card-img-top" src={Card3} alt="Card image cap" />
-                <div class="card-body d-flex justify-content-between">
-                  <div>
-                    <h5 class="card-title">Black Gym Suit</h5>
-                    <p class="card-text">From Rs. 3500</p>
-                  </div>
-                  <div class="Cart">
-                    <a href="#"><i className="bi bi-handbag-fill my-5"></i></a>
-                  </div>
-                </div>
-                <div class="info">
-                  <h2>Size</h2>
-                  <div class="size-options">
-                    <div class="size-option" data-size="S">S</div>
-                    <div class="size-option" data-size="M">M</div>
-                    <div class="size-option" data-size="L">L</div>
-                  </div>
-
-                  <h2>Color</h2>
-                  <div class="color-options">
-                    <div class="color-option red"></div>
-                    <div class="color-option blue"></div>
-                    <div class="color-option green"></div>
-                    <div class="color-option yellow"></div>
-                    <div class="color-option purple"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="card" >
-                <img class="card-img-top" src={Card4} alt="Card image cap" />
-
-                <div class="card-body d-flex justify-content-between">
-                  <div>
-                    <h5 class="card-title">Women Brown Sando</h5>
-                    <p class="card-text">From Rs. 3400</p>
-                  </div>
-                  <div class="Cart">
-                    <a href="#"><i className="bi bi-handbag-fill my-5"></i></a>
-                  </div>
-                </div>
-                <div class="info">
-                  <h2>Size</h2>
-                  <div class="size-options">
-                    <div class="size-option" data-size="S">S</div>
-                    <div class="size-option" data-size="M">M</div>
-                    <div class="size-option" data-size="L">L</div>
-                  </div>
-
-                  <h2>Color</h2>
-                  <div class="color-options">
-                    <div class="color-option red"></div>
-                    <div class="color-option blue"></div>
-                    <div class="color-option green"></div>
-                    <div class="color-option yellow"></div>
-                    <div class="color-option purple"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-12 py-4 d-flex justify-content-around">
-              <div class="card">
-                <img class="card-img-top" src={Card1} alt="Card image cap" />
-                <div class="card-body d-flex justify-content-between">
-                  <div>
-                    <h5 class="card-title">Round Neck Sando</h5>
-                    <p class="card-text">From Rs. 2600</p>
-                  </div>
-                  <div class="Cart">
-                    <a href="#" ><i className="bi bi-handbag-fill bi-lg"></i></a>
-                  </div>
-                </div>
-                <div class="info">
-                  <h2>Size</h2>
-                  <div class="size-options">
-                    <div class="size-option" data-size="S">S</div>
-                    <div class="size-option" data-size="M">M</div>
-                    <div class="size-option" data-size="L">L</div>
-                  </div>
-
-                  <h2>Color</h2>
-                  <div class="color-options">
-                    <div class="color-option red"></div>
-                    <div class="color-option blue"></div>
-                    <div class="color-option green"></div>
-                    <div class="color-option yellow"></div>
-                    <div class="color-option purple"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <img class="card-img-top" src={Card2} alt="Card image cap" />
-
-                <div class="card-body d-flex justify-content-between">
-                  <div>
-                    <h5 class="card-title">Black Zipper Hoddie</h5>
-                    <p class="card-text">From Rs. 4100</p>
-                  </div>
-
-                  <div class="Cart">
-                    <a href="#"><i className="bi bi-handbag-fill bi-4x my-5"></i></a>
-                  </div>
-                </div>
-                <div class="info">
-                  <h2>Size</h2>
-                  <div class="size-options">
-                    <div class="size-option" data-size="S">S</div>
-                    <div class="size-option" data-size="M">M</div>
-                    <div class="size-option" data-size="L">L</div>
-                  </div>
-
-                  <h2>Color</h2>
-                  <div class="color-options">
-                    <div class="color-option red"></div>
-                    <div class="color-option blue"></div>
-                    <div class="color-option green"></div>
-                    <div class="color-option yellow"></div>
-                    <div class="color-option purple"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <img class="card-img-top" src={Card3} alt="Card image cap" />
-                <div class="card-body d-flex justify-content-between">
-                  <div>
-                    <h5 class="card-title">Black Gym Suit</h5>
-                    <p class="card-text">From Rs. 3500</p>
-                  </div>
-                  <div class="Cart">
-                    <a href="#"><i className="bi bi-handbag-fill my-5"></i></a>
-                  </div>
-                </div>
-                <div class="info">
-                  <h2>Size</h2>
-                  <div class="size-options">
-                    <div class="size-option" data-size="S">S</div>
-                    <div class="size-option" data-size="M">M</div>
-                    <div class="size-option" data-size="L">L</div>
-                  </div>
-
-                  <h2>Color</h2>
-                  <div class="color-options">
-                    <div class="color-option red"></div>
-                    <div class="color-option blue"></div>
-                    <div class="color-option green"></div>
-                    <div class="color-option yellow"></div>
-                    <div class="color-option purple"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="card" >
-                <img class="card-img-top" src={Card4} alt="Card image cap" />
-
-                <div class="card-body d-flex justify-content-between">
-                  <div>
-                    <h5 class="card-title">Women Brown Sando</h5>
-                    <p class="card-text">From Rs. 3400</p>
-                  </div>
-                  <div class="Cart">
-                    <a href="#"><i className="bi bi-handbag-fill my-5"></i></a>
-                  </div>
-                </div>
-                <div class="info">
-                  <h2>Size</h2>
-                  <div class="size-options">
-                    <div class="size-option" data-size="S">S</div>
-                    <div class="size-option" data-size="M">M</div>
-                    <div class="size-option" data-size="L">L</div>
-                  </div>
-
-                  <h2>Color</h2>
-                  <div class="color-options">
-                    <div class="color-option red"></div>
-                    <div class="color-option blue"></div>
-                    <div class="color-option green"></div>
-                    <div class="color-option yellow"></div>
-                    <div class="color-option purple"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
       <section className='Fotter'>
         <Fotter />

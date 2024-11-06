@@ -26,6 +26,7 @@ import lastCard3 from '../assets/Images/LastCard-3.jpg'
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import 'owl.carousel/dist/owl.carousel.min.js';
+import { DiEnvato } from 'react-icons/di';
 
 function Home() {
 
@@ -128,7 +129,7 @@ function Home() {
           <div className="item">
             <div className="image-container">
               <img src={heroImage1} alt="Slide 1" />
-              <h2 className="image-heading">
+              <div className="image-heading">
                 <p>Where Sophistication meets street-savvy fashion.</p>
                 <p>Classic</p>
                 <p>Streetwear</p>
@@ -138,7 +139,7 @@ function Home() {
                 <a href="#" className='ViewMore'>
                   <i class="bi bi-arrow-right-circle"></i> View More
                 </a>
-              </h2>
+              </div>
             </div>
           </div>
           <div className="item">
@@ -229,123 +230,131 @@ function Home() {
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-12 d-flex justify-content-around">
-              <div class="card">
-                <img class="card-img-top" src={Card1} alt="Card image cap" />
-                <div class="card-body d-flex justify-content-between">
-                  <div>
-                    <h5 class="card-title">Round Neck Sando</h5>
-                    <p class="card-text">From Rs. 2600</p>
+            <div className=''>
+              <div className="col-lg-2 col-md-6 col-sm-12">
+                <div class="card">
+                  <img class="card-img-top" src={Card1} alt="Card image cap" />
+                  <div class="card-body d-flex justify-content-between">
+                    <div>
+                      <h5 class="card-title">Round Neck Sando</h5>
+                      <p class="card-text">From Rs. 2600</p>
+                    </div>
+                    <div class="Cart">
+                      <a href="#" ><i className="bi bi-handbag-fill bi-lg"></i></a>
+                    </div>
                   </div>
-                  <div class="Cart">
-                    <a href="#" ><i className="bi bi-handbag-fill bi-lg"></i></a>
-                  </div>
-                </div>
-                <div class="info">
-                  <h2>Size</h2>
-                  <div class="size-options">
-                    <div class="size-option" data-size="S">S</div>
-                    <div class="size-option" data-size="M">M</div>
-                    <div class="size-option" data-size="L">L</div>
-                  </div>
+                  <div class="info">
+                    <h2>Size</h2>
+                    <div class="size-options">
+                      <div class="size-option" data-size="S">S</div>
+                      <div class="size-option" data-size="M">M</div>
+                      <div class="size-option" data-size="L">L</div>
+                    </div>
 
-                  <h2>Color</h2>
-                  <div class="color-options">
-                    <div class="color-option red"></div>
-                    <div class="color-option blue"></div>
-                    <div class="color-option green"></div>
-                    <div class="color-option yellow"></div>
-                    <div class="color-option purple"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <img class="card-img-top" src={Card2} alt="Card image cap" />
-
-                <div class="card-body d-flex justify-content-between">
-                  <div>
-                    <h5 class="card-title">Black Zipper Hoddie</h5>
-                    <p class="card-text">From Rs. 4100</p>
-                  </div>
-
-                  <div class="Cart">
-                    <a href="#"><i className="bi bi-handbag-fill bi-4x my-5"></i></a>
-                  </div>
-                </div>
-                <div class="info">
-                  <h2>Size</h2>
-                  <div class="size-options">
-                    <div class="size-option" data-size="S">S</div>
-                    <div class="size-option" data-size="M">M</div>
-                    <div class="size-option" data-size="L">L</div>
-                  </div>
-
-                  <h2>Color</h2>
-                  <div class="color-options">
-                    <div class="color-option red"></div>
-                    <div class="color-option blue"></div>
-                    <div class="color-option green"></div>
-                    <div class="color-option yellow"></div>
-                    <div class="color-option purple"></div>
+                    <h2>Color</h2>
+                    <div class="color-options">
+                      <div class="color-option red"></div>
+                      <div class="color-option blue"></div>
+                      <div class="color-option green"></div>
+                      <div class="color-option yellow"></div>
+                      <div class="color-option purple"></div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <img class="card-img-top" src={Card3} alt="Card image cap" />
-                <div class="card-body d-flex justify-content-between">
-                  <div>
-                    <h5 class="card-title">Black Gym Suit</h5>
-                    <p class="card-text">From Rs. 3500</p>
-                  </div>
-                  <div class="Cart">
-                    <a href="#"><i className="bi bi-handbag-fill my-5"></i></a>
-                  </div>
-                </div>
-                <div class="info">
-                  <h2>Size</h2>
-                  <div class="size-options">
-                    <div class="size-option" data-size="S">S</div>
-                    <div class="size-option" data-size="M">M</div>
-                    <div class="size-option" data-size="L">L</div>
-                  </div>
+              <div className="col-lg-2 col-md-6 col-sm-12">
+                <div class="card">
+                  <img class="card-img-top" src={Card2} alt="Card image cap" />
 
-                  <h2>Color</h2>
-                  <div class="color-options">
-                    <div class="color-option red"></div>
-                    <div class="color-option blue"></div>
-                    <div class="color-option green"></div>
-                    <div class="color-option yellow"></div>
-                    <div class="color-option purple"></div>
+                  <div class="card-body d-flex justify-content-between">
+                    <div>
+                      <h5 class="card-title">Black Zipper Hoddie</h5>
+                      <p class="card-text">From Rs. 4100</p>
+                    </div>
+
+                    <div class="Cart">
+                      <a href="#"><i className="bi bi-handbag-fill bi-4x my-5"></i></a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <h2>Size</h2>
+                    <div class="size-options">
+                      <div class="size-option" data-size="S">S</div>
+                      <div class="size-option" data-size="M">M</div>
+                      <div class="size-option" data-size="L">L</div>
+                    </div>
+
+                    <h2>Color</h2>
+                    <div class="color-options">
+                      <div class="color-option red"></div>
+                      <div class="color-option blue"></div>
+                      <div class="color-option green"></div>
+                      <div class="color-option yellow"></div>
+                      <div class="color-option purple"></div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="card" >
-                <img class="card-img-top" src={Card4} alt="Card image cap" />
-
-                <div class="card-body d-flex justify-content-between">
-                  <div>
-                    <h5 class="card-title">Women Brown Sando</h5>
-                    <p class="card-text">From Rs. 3400</p>
+              <div className="col-lg-2 col-md-6 col-sm-12">
+                <div class="card">
+                  <img class="card-img-top" src={Card3} alt="Card image cap" />
+                  <div class="card-body d-flex justify-content-between">
+                    <div>
+                      <h5 class="card-title">Black Gym Suit</h5>
+                      <p class="card-text">From Rs. 3500</p>
+                    </div>
+                    <div class="Cart">
+                      <a href="#"><i className="bi bi-handbag-fill my-5"></i></a>
+                    </div>
                   </div>
-                  <div class="Cart">
-                    <a href="#"><i className="bi bi-handbag-fill my-5"></i></a>
+                  <div class="info">
+                    <h2>Size</h2>
+                    <div class="size-options">
+                      <div class="size-option" data-size="S">S</div>
+                      <div class="size-option" data-size="M">M</div>
+                      <div class="size-option" data-size="L">L</div>
+                    </div>
+
+                    <h2>Color</h2>
+                    <div class="color-options">
+                      <div class="color-option red"></div>
+                      <div class="color-option blue"></div>
+                      <div class="color-option green"></div>
+                      <div class="color-option yellow"></div>
+                      <div class="color-option purple"></div>
+                    </div>
                   </div>
                 </div>
-                <div class="info">
-                  <h2>Size</h2>
-                  <div class="size-options">
-                    <div class="size-option" data-size="S">S</div>
-                    <div class="size-option" data-size="M">M</div>
-                    <div class="size-option" data-size="L">L</div>
-                  </div>
+              </div>
+              <div className="col-lg-2 col-md-6 col-sm-12">
+                <div class="card" >
+                  <img class="card-img-top" src={Card4} alt="Card image cap" />
 
-                  <h2>Color</h2>
-                  <div class="color-options">
-                    <div class="color-option red"></div>
-                    <div class="color-option blue"></div>
-                    <div class="color-option green"></div>
-                    <div class="color-option yellow"></div>
-                    <div class="color-option purple"></div>
+                  <div class="card-body d-flex justify-content-between">
+                    <div>
+                      <h5 class="card-title">Women Brown Sando</h5>
+                      <p class="card-text">From Rs. 3400</p>
+                    </div>
+                    <div class="Cart">
+                      <a href="#"><i className="bi bi-handbag-fill my-5"></i></a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <h2>Size</h2>
+                    <div class="size-options">
+                      <div class="size-option" data-size="S">S</div>
+                      <div class="size-option" data-size="M">M</div>
+                      <div class="size-option" data-size="L">L</div>
+                    </div>
+
+                    <h2>Color</h2>
+                    <div class="color-options">
+                      <div class="color-option red"></div>
+                      <div class="color-option blue"></div>
+                      <div class="color-option green"></div>
+                      <div class="color-option yellow"></div>
+                      <div class="color-option purple"></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -363,8 +372,8 @@ function Home() {
             </div>
           </div>
           <div class="row">
-            <div class="col-md-3">
-              <div class="card h-100 shadow-sm">
+            <div class="col-md-3 my-3">
+              <div class="card  h-100 shadow-sm">
                 <div class="card-body">
                   <RiBox3Fill size={50} ></RiBox3Fill >
                   <h5 class="card-title">Free Shipping</h5>
@@ -372,7 +381,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 my-3">
               <div class="card h-100 shadow-sm">
                 <div class="card-body">
                   <MdOutlineShield size={50}></MdOutlineShield>
@@ -382,7 +391,7 @@ function Home() {
               </div>
             </div>
             <div class="col-md-3">
-              <div class="card h-100 shadow-sm">
+              <div class="card  h-100 shadow-sm">
                 <div class="card-body">
                   <SlReload size={50}></SlReload>
                   <h5 class="card-title">30-days Returns</h5>
@@ -390,7 +399,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 my-3">
               <div class="card h-100 shadow-sm">
                 <div class="card-body">
                   <FiHeadphones size={50}></FiHeadphones>
@@ -405,7 +414,7 @@ function Home() {
       <div className="Section7">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="Exploring">
                 <div className="text">
                   <h1>New Fashion</h1>
@@ -419,7 +428,7 @@ function Home() {
               </div>
 
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="row">
                 <div className="col-lg-12 d-flex justify-content-around">
                   <div className='Cards'>
@@ -494,7 +503,7 @@ function Home() {
         <div className="container my-4">
           <div className="row">
             <div className="col-lg-12 text-center">
-            <h1 className="weekend-deals">
+              <h1 className="weekend-deals">
                 STAY <span className="transparent-text">CONNECTED</span>
               </h1>
               <p>
@@ -503,60 +512,70 @@ function Home() {
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-12 d-flex justify-content-around Section8">
-              <div className="card">
-                <img
-                  src={lastCard1}
-                  className="card-img-top img-fluid scale-on-hover"
-                  alt="Card 1"
-                />
-              </div>
-              <div className="card">
-                <img
-                  src={lastCard2}
-                  className="card-img-top img-fluid"
-                  alt="Card 3"
-                />
-              </div>
-              <div className="card">
-                <video
-                  ref={videoRef1}
-                  src="//theking-castle.myshopify.com/cdn/shop/videos/c/vp/12489ef50d3e4fe797a0967abff98130/12489ef50d3e4fe797a0967abff98130.HD-1080p-7.2Mbps-32552816.mp4?v=0"
-                  className="card-img-top img-fluid"
-                  muted
-                  autoPlay:true
-                ></video>
-                <div
-                  className="position-absolute top-0 end-0 p-3"
-                  style={{ zIndex: 1 }}
-                >
-                  <button className="btn" onClick={toggleVideoPlayPause}>
-                    {isPlaying1 ? <i className="bi bi-pause-fill"></i> : <i className="bi bi-play-fill"></i>}
-                  </button>
+            <div className="Section8">
+              <div className='col-lg-2 col-sm-6'>
+                <div className="card">
+                  <img
+                    src={lastCard1}
+                    className="card-img-top img-fluid scale-on-hover"
+                    alt="Card 1"
+                  />
                 </div>
               </div>
-              <div className="card">
-                <img
-                  src={lastCard3}
-                  className="card-img-top img-fluid"
-                  alt="Card 3"
-                />
+              <div className='col-lg-2 col-sm-6'>
+                <div className="card">
+                  <img
+                    src={lastCard2}
+                    className="card-img-top img-fluid"
+                    alt="Card 3"
+                  />
+                </div>
               </div>
-              <div className="card">
-                <video
-                  ref={videoRef2}
-                  src="//theking-castle.myshopify.com/cdn/shop/videos/c/vp/fd12c57adaef4cec97fd0083925c6888/fd12c57adaef4cec97fd0083925c6888.HD-1080p-7.2Mbps-32617819.mp4?v=0"
-                  className="card-img-top img-fluid"
-                  muted
-                  autoPlay:true
-                ></video>
-                <div
-                  className="position-absolute top-0 end-0 p-3"
-                  style={{ zIndex: 1 }}
-                >
-                  <button className="btn" onClick={toggleVideo2PlayPause}>
-                    {isPlaying2 ? <i className="bi bi-pause-fill"></i> : <i className="bi bi-play-fill"></i>}
-                  </button>
+              <div className='col-lg-2 col-sm-6'>
+                <div className="card">
+                  <video
+                    ref={videoRef1}
+                    src="//theking-castle.myshopify.com/cdn/shop/videos/c/vp/12489ef50d3e4fe797a0967abff98130/12489ef50d3e4fe797a0967abff98130.HD-1080p-7.2Mbps-32552816.mp4?v=0"
+                    className="card-img-top img-fluid"
+                    muted
+                    autoPlay:true
+                  ></video>
+                  <div
+                    className="position-absolute top-0 end-0 p-3"
+                    style={{ zIndex: 1 }}
+                  >
+                    <button className="btn" onClick={toggleVideoPlayPause}>
+                      {isPlaying1 ? <i className="bi bi-pause-fill"></i> : <i className="bi bi-play-fill"></i>}
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-2 col-sm-6'>
+                <div className="card">
+                  <img
+                    src={lastCard3}
+                    className="card-img-top img-fluid"
+                    alt="Card 3"
+                  />
+                </div>
+              </div>
+              <div className='col-lg-2 col-sm-6'>
+                <div className="card">
+                  <video
+                    ref={videoRef2}
+                    src="//theking-castle.myshopify.com/cdn/shop/videos/c/vp/fd12c57adaef4cec97fd0083925c6888/fd12c57adaef4cec97fd0083925c6888.HD-1080p-7.2Mbps-32617819.mp4?v=0"
+                    className="card-img-top img-fluid"
+                    muted
+                    autoPlay:true
+                  ></video>
+                  <div
+                    className="position-absolute top-0 end-0 p-3"
+                    style={{ zIndex: 1 }}
+                  >
+                    <button className="btn" onClick={toggleVideo2PlayPause}>
+                      {isPlaying2 ? <i className="bi bi-pause-fill"></i> : <i className="bi bi-play-fill"></i>}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
